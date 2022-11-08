@@ -2,12 +2,16 @@
   "name": "pettable-assignment",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "scripts": {
-    "start-web": "cd web && http-server"
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samyadh/pettable-assignment.git"
+  },
+  "exports": {
+    "./lib": "./lib/validations/state-zip-mapping.js"
   },
   "author": "Samyadh Jain",
   "license": "ISC",
@@ -16,6 +20,8 @@
   },
   "homepage": "https://github.com/samyadh/pettable-assignment#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "http-server": "^14.1.1"
   }
 }
